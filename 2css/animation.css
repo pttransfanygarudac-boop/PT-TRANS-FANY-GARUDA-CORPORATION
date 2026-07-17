@@ -1,0 +1,266 @@
+/* =====================================================
+   PT TRANS FANY GARUDA CORPORATION
+   ANIMATION.CSS
+===================================================== */
+
+
+
+/* =====================================================
+   GLOBAL TRANSITION
+===================================================== */
+
+*{
+
+    transition:
+    background .3s ease,
+    color .3s ease,
+    border-color .3s ease,
+    box-shadow .3s ease,
+    transform .3s ease;
+
+}
+
+
+
+/* =====================================================
+   FADE UP
+===================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-content{
+
+    animation:fadeUp .9s ease;
+
+}
+
+
+
+/* =====================================================
+   CARD HOVER
+===================================================== */
+
+.business-card,
+
+.why-card,
+
+.news-card,
+
+.contact-card{
+
+    transition:.35s ease;
+
+}
+
+.business-card:hover,
+
+.why-card:hover,
+
+.news-card:hover,
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+
+
+/* =====================================================
+   BUTTON HOVER
+===================================================== */
+
+.button-primary:hover,
+
+.button-secondary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* =====================================================
+   IMAGE ZOOM
+===================================================== */
+
+.business-card{
+
+    overflow:hidden;
+
+}
+
+.news-card{
+
+    overflow:hidden;
+
+}
+
+.business-card img,
+
+.news-card img{
+
+    transition:transform .5s ease;
+
+}
+
+.business-card:hover img,
+
+.news-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar a{
+
+    position:relative;
+
+}
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.3s;
+
+}
+
+.navbar a:hover::after{
+
+    width:100%;
+
+}
+
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo img{
+
+    transition:transform .4s ease;
+
+}
+
+.logo img:hover{
+
+    transform:rotate(-5deg) scale(1.05);
+
+}
+
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+.back-to-top{
+
+    transition:.35s;
+
+}
+
+.back-to-top:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+
+/* =====================================================
+   HERO BUTTON
+===================================================== */
+
+.hero-button-group a{
+
+    transition:.3s;
+
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer-menu a{
+
+    transition:.3s;
+
+}
+
+
+
+/* =====================================================
+   SCROLL BAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-hover);
+
+}
+
+
+
