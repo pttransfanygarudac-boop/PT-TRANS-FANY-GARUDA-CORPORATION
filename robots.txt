@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://pttransfanygarudac-boop.github.io/PT-TRANS-FANY-GARUDA-CORPORATION/sitemap.xml
