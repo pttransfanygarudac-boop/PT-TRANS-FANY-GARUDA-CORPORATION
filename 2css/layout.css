@@ -1,0 +1,411 @@
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:9999;
+
+    background:rgba(5,6,8,.92);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    min-height:80px;
+
+}
+
+.logo img{
+
+    width:70px;
+
+    height:auto;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+}
+
+.navbar a{
+
+    color:var(--white);
+
+    font-size:15px;
+
+    transition:var(--transition);
+
+}
+
+.navbar a:hover{
+
+    color:var(--primary);
+
+}
+
+.header-button{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:46px;
+
+    padding:0 22px;
+
+}
+
+
+
+/* =====================================================
+   HEADER SCROLL
+===================================================== */
+
+.header.scrolled{
+
+    background:#0d0d0d;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100dvh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background-image:
+    linear-gradient(
+    rgba(5,6,8,.50),
+    rgba(5,6,8,.45)
+    ),
+    var(--hero);
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+.hero-content{
+
+    width:100%;
+
+    max-width:900px;
+
+    padding:70px 20px;
+
+}
+
+.hero-logo{
+
+    width:180px;
+
+    margin:0 auto 30px;
+
+}
+
+.hero-company{
+
+    margin-bottom:20px;
+
+}
+
+.hero-line{
+
+    width:110px;
+
+    height:3px;
+
+    background:var(--gold);
+
+    margin:0 auto 30px;
+
+}
+
+.hero-title{
+
+    margin-bottom:25px;
+
+}
+
+.hero-description{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+}
+
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about{
+
+    width:100%;
+
+}
+
+.about-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+.about-description{
+
+    max-width:850px;
+
+    margin:0 auto 25px;
+
+    line-height:1.9;
+
+}
+
+
+
+/* =====================================================
+   BUSINESS
+===================================================== */
+
+.business{
+
+    width:100%;
+
+}
+
+.business-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+
+
+/* =====================================================
+   WHY US
+===================================================== */
+
+.why-us{
+
+    width:100%;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+
+
+/* =====================================================
+   NEWS
+===================================================== */
+
+.news{
+
+    width:100%;
+
+}
+
+.news-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact{
+
+    width:100%;
+
+}
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+
+
+/* =====================================================
+   CALL TO ACTION
+===================================================== */
+
+.cta{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.cta-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+
+.cta-button-group{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:40px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer{
+
+    width:100%;
+
+    text-align:center;
+
+    border-top:1px solid var(--border);
+
+    padding:70px 0 35px;
+
+}
+
+.footer-menu{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin:30px 0;
+
+}
+
+
+/* =====================================================
+   GALLERY GRID
+===================================================== */
+
+.gallery-grid {
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+
+    align-items: stretch;
+
+    margin-top: 3rem;
+
+}
+
+.gallery-grid > * {
+
+    width: 100%;
+
+}
