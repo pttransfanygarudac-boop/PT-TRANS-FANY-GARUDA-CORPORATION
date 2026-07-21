@@ -236,12 +236,20 @@ section{
 
 }
 
-.business-grid,
+.business-grid{
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:25px;
+
+}
+
 .news-grid,
 .why-grid,
 .contact-grid{
 
     grid-template-columns:1fr;
+
 
 }
 
@@ -311,6 +319,25 @@ section{
 }
 
 }
+
+
+
+/* =====================================================
+   BUSINESS GRID MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+    .business-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+    }
+
+}
+
 
 
 /* =====================================================
