@@ -1,5 +1,6 @@
-User-agent: *
+# robots.txt for PT RENAI GVTL INDONESIA
 
+User-agent: *
 Allow: /
 
-Sitemap: https://pttransfanygarudac-boop.github.io/PT-TRANS-FANY-GARUDA-CORPORATION/sitemap.xml
+Sitemap: https://pttransfanygarudac-boop.github.io/PT-RENAI-GVTLINDONESIA/sitemap.xml
